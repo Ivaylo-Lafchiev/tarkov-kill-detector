@@ -4,5 +4,6 @@ Uses Nvidia Highlights to detect whenever a player has been shot dead by watchin
 
 Build: 
 
-`pip install pyinstaller`
-`pyinstaller -F --add-data "sound.wav;." index.py`
+ `pip install pyinstaller`
+
+ `pyinstaller -F --add-data "sound.wav;." index.py`
