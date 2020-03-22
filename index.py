@@ -39,6 +39,7 @@ def get_reg(name):
 if (len(sys.argv) == 2 and sys.argv[1] == "clear"):
     del_reg("KEY")
     print('Cleared license key...')
+    os.system('pause')
     exit(0)
 
 savedKey = get_reg("KEY")
@@ -58,6 +59,7 @@ response = requests.request("GET", url, headers=headers, data = payload)
 if (response.status_code != 200):
     print(response.text)
     print("Exiting...")
+    os.system('pause')
     exit(1)
 else:
     print('Valid license key')
