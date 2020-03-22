@@ -4,7 +4,7 @@ block_cipher = None
 
 
 a = Analysis(['index.py'],
-             pathex=['/Users/yanispassova/tarkov-kill-detector'],
+             pathex=['C:\\Users\\ivail\\OneDrive\\Software Engineering\\tarkov-kill-detector'],
              binaries=[],
              datas=[('sound.wav', '.')],
              hiddenimports=[],
