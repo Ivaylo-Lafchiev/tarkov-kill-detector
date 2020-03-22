@@ -67,6 +67,9 @@ set_reg("KEY", licenseKey)
 path_to_watch = os.path.join(
     os.environ['TEMP'], "highlights", "Escape From Tarkov")
 
+if not os.path.exists(path_to_watch):
+    os.makedirs(path_to_watch)
+
 print('Watching: ' + path_to_watch)
 before = dict([(f, None) for f in os.listdir(path_to_watch)])
 
